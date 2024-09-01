@@ -18,7 +18,7 @@ DLOG_CORE_BEGIN_NAMESPACE
 
 /*!
 @~english
-  \class Dtk::Core::AbstractAppender
+  \class Gxtk::Core::AbstractAppender
   \inmodule gxtkcore
 
   \brief The AbstractAppender class provides an abstract base class for writing a log entries.
@@ -96,7 +96,7 @@ Logger::LogLevel AbstractAppender::detailsLevel() const
   \sa detailsLevel()
   \sa Logger::LogLevel
  */
-void Dtk::Core::AbstractAppender::setDetailsLevel(Logger::LogLevel level)
+void Gxtk::Core::AbstractAppender::setDetailsLevel(Logger::LogLevel level)
 {
     QMutexLocker locker(&m_detailsLevelMutex);
     m_detailsLevel = level;

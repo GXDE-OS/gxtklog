@@ -15,7 +15,7 @@ ELSE()
   SET(QT_VERSION_MAJOR "5")
 ENDIF()
 
-SET (GLog "Dtk${DTK_VERSION_MAJOR}Log")
+SET (GLog "Gxtk${DTK_VERSION_MAJOR}Log")
 PROJECT(${GLog}
   VERSION ${DLOG_VERSION}
   DESCRIPTION "Simple, convinient and thread safe logger for Qt-based C++ apps"
@@ -113,7 +113,7 @@ INSTALL(TARGETS ${library_target}
 
 INSTALL(EXPORT ${GLog}Targets
   FILE ${GLog}Targets.cmake
-  NAMESPACE Dtk${DTK_VERSION_MAJOR}::
+  NAMESPACE Gxtk${DTK_VERSION_MAJOR}::
   DESTINATION ${CONFIG_CMAKE_INSTALL_DIR}
 )
 

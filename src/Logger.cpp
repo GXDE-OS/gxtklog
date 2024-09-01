@@ -37,9 +37,9 @@ DLOG_CORE_BEGIN_NAMESPACE
 
 /*!
 @~english
-  \macro Dtk::Core::dlogger
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dlogger
+  \macro Gxtk::Core::dlogger
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dlogger
 
   @brief Macro returning the current instance of Logger object
 
@@ -52,14 +52,14 @@ DLOG_CORE_BEGIN_NAMESPACE
   dlogger->registerAppender(consoleAppender);
   \endcode
 
-  @sa Dtk::Core::Logger::globalInstance()
+  @sa Gxtk::Core::Logger::globalInstance()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dTrace
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dTrace
+  \macro Gxtk::Core::dTrace
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dTrace
 
   @brief Writes the trace log record
 
@@ -72,79 +72,79 @@ DLOG_CORE_BEGIN_NAMESPACE
   instance). Not all compilers will support this. Please, consider reviewing your compiler documentation to ensure
   it support __VA_ARGS__ macro.
 
-  @sa Dtk::Core::dInfo Dtk::Core::dDebug Dtk::Core::dWarning Dtk::Core::dError
-  @sa Dtk::Core::Logger::LogLevel
-  @sa Dtk::Core::Logger::write()
+  @sa Gxtk::Core::dInfo Gxtk::Core::dDebug Gxtk::Core::dWarning Gxtk::Core::dError
+  @sa Gxtk::Core::Logger::LogLevel
+  @sa Gxtk::Core::Logger::write()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dDebug
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dDebug
+  \macro Gxtk::Core::dDebug
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dDebug
 
   @brief Writes the debug log record
 
   This macro records the debug log record using the Logger::write() function. It works similar to the dTrace()
   macro.
 
-  @sa Dtk::Core::dTrace Dtk::Core::dInfo Dtk::Core::dWarning Dtk::Core::dError
-  @sa Dtk::Core::Logger::LogLevel
-  @sa Dtk::Core::Logger::write()
+  @sa Gxtk::Core::dTrace Gxtk::Core::dInfo Gxtk::Core::dWarning Gxtk::Core::dError
+  @sa Gxtk::Core::Logger::LogLevel
+  @sa Gxtk::Core::Logger::write()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dInfo
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dInfo
+  \macro Gxtk::Core::dInfo
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dInfo
 
   @brief Writes the info log record
 
   This macro records the info log record using the Logger::write() function. It works similar to the dTrace()
   macro.
 
-  @sa Dtk::Core::dTrace Dtk::Core::dDebug Dtk::Core::dWarning Dtk::Core::dError
-  @sa Dtk::Core::Logger::LogLevel
-  @sa Dtk::Core::Logger::write()
+  @sa Gxtk::Core::dTrace Gxtk::Core::dDebug Gxtk::Core::dWarning Gxtk::Core::dError
+  @sa Gxtk::Core::Logger::LogLevel
+  @sa Gxtk::Core::Logger::write()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dWarning
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dWarning
+  \macro Gxtk::Core::dWarning
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dWarning
 
   @brief Write the warning log record
 
   This macro records the warning log record using the Logger::write() function. It works similar to the dTrace()
   macro.
 
-  @sa Dtk::Core::dTrace Dtk::Core::dInfo Dtk::Core::dDebug Dtk::Core::dError
-  @sa Dtk::Core::Logger::LogLevel
-  @sa Dtk::Core::Logger::write()
+  @sa Gxtk::Core::dTrace Gxtk::Core::dInfo Gxtk::Core::dDebug Gxtk::Core::dError
+  @sa Gxtk::Core::Logger::LogLevel
+  @sa Gxtk::Core::Logger::write()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dError
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dError
+  \macro Gxtk::Core::dError
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dError
 
   @brief Write the error log record
   This macro records the error log record using the Logger::write() function. It works similar to the dTrace()
   macro.
 
-  @sa Dtk::Core::dTrace
-  @sa Dtk::Core::Logger::LogLevel
-  @sa Dtk::Core::Logger::write()
+  @sa Gxtk::Core::dTrace
+  @sa Gxtk::Core::Logger::LogLevel
+  @sa Gxtk::Core::Logger::write()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dFatal
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dFatal
+  \macro Gxtk::Core::dFatal
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dFatal
 
   @brief Write the fatal log record
 
@@ -154,16 +154,16 @@ DLOG_CORE_BEGIN_NAMESPACE
   @note Recording of the log record using the Logger::Fatal log level will lead to calling the STL abort()
         function, which will interrupt the running of your software and begin the writing of the core dump.
 
-  @sa Dtk::Core::dTrace
-  @sa Dtk::Core::Logger::LogLevel
-  @sa Dtk::Core::Logger::write()
+  @sa Gxtk::Core::dTrace
+  @sa Gxtk::Core::Logger::LogLevel
+  @sa Gxtk::Core::Logger::write()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dCTrace(category)
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dCTrace()
+  \macro Gxtk::Core::dCTrace(category)
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dCTrace()
 
   @brief Writes the trace log record to the specific category
 
@@ -172,74 +172,74 @@ DLOG_CORE_BEGIN_NAMESPACE
 
   @param[in] category category name string
 
-  @sa Dtk::Core::dTrace
-  @sa Dtk::Core::Logger::LogLevel
-  @sa Dtk::Core::Logger::registerCategoryAppender()
-  @sa Dtk::Core::Logger::write()
-  @sa Dtk::Core::dCategory(), Dtk::Core::dGlobalCategory()
+  @sa Gxtk::Core::dTrace
+  @sa Gxtk::Core::Logger::LogLevel
+  @sa Gxtk::Core::Logger::registerCategoryAppender()
+  @sa Gxtk::Core::Logger::write()
+  @sa Gxtk::Core::dCategory(), Gxtk::Core::dGlobalCategory()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dCDebug
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dCDebug
+  \macro Gxtk::Core::dCDebug
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dCDebug
 
   @brief Writes the debug log record to the specific category
 
   This macro records the debug log record using the Logger::write() function. It works similar to the dCTrace()
   macro.
 
-  @sa Dtk::Core::dCTrace()
+  @sa Gxtk::Core::dCTrace()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dCInfo
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dCInfo
+  \macro Gxtk::Core::dCInfo
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dCInfo
 
   @brief Writes the info log record to the specific category
 
   This macro records the info log record using the Logger::write() function. It works similar to the dCTrace()
   macro.
 
-  @sa Dtk::Core::dCTrace()
+  @sa Gxtk::Core::dCTrace()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dCWarning
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dCWarning
+  \macro Gxtk::Core::dCWarning
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dCWarning
 
   @brief Writes the warning log record to the specific category
 
   This macro records the warning log record using the Logger::write() function. It works similar to the dCTrace()
   macro.
 
-  @sa Dtk::Core::dCTrace()
+  @sa Gxtk::Core::dCTrace()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dCError
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dCError
+  \macro Gxtk::Core::dCError
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dCError
 
   @brief Writes the error log record to the specific category
 
   This macro records the error log record using the Logger::write() function. It works similar to the dCTrace()
   macro.
 
-  @sa Dtk::Core::dCTrace()
+  @sa Gxtk::Core::dCTrace()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dCFatal
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dCFatal
+  \macro Gxtk::Core::dCFatal
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dCFatal
 
   @brief Write the fatal log record to the specific category
 
@@ -249,14 +249,14 @@ DLOG_CORE_BEGIN_NAMESPACE
   @note Recording of the log record using the Logger::Fatal log level will lead to calling the STL abort()
         function, which will interrupt the running of your software and begin the writing of the core dump.
 
-  @sa Dtk::Core::dCTrace()
+  @sa Gxtk::Core::dCTrace()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dCategory(category)
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dCategory()
+  \macro Gxtk::Core::dCategory(category)
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dCategory()
 
   @brief Create dlogger instance inside your custom class to log all messages to the specified \a category
 
@@ -287,17 +287,17 @@ DLOG_CORE_BEGIN_NAMESPACE
   }
   \endcode
 
-  @sa Dtk::Core::Logger::write()
-  @sa Dtk::Core::dTrace()
-  @sa Dtk::Core::Logger::registerCategoryAppender()
-  @sa Dtk::Core::Logger::setDefaultCategory()
+  @sa Gxtk::Core::Logger::write()
+  @sa Gxtk::Core::dTrace()
+  @sa Gxtk::Core::Logger::registerCategoryAppender()
+  @sa Gxtk::Core::Logger::setDefaultCategory()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dGlobalCategory(category)
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dGlobalCategory()
+  \macro Gxtk::Core::dGlobalCategory(category)
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dGlobalCategory()
 
   @brief Create dlogger instance inside your custom class to log all messages both to the specified \a category and to
   the global dlogger instance.
@@ -308,18 +308,18 @@ DLOG_CORE_BEGIN_NAMESPACE
   dlogger->logToGlobalInstance(dlogger->defaultCategory(), true);
   \endcode
 
-  @sa Dtk::Core::dCategory
-  @sa Dtk::Core::Logger::logToGlobalInstance()
-  @sa Dtk::Core::Logger::defaultCategory()
-  @sa Dtk::Core::Logger::registerCategoryAppender()
-  @sa Dtk::Core::Logger::write()
+  @sa Gxtk::Core::dCategory
+  @sa Gxtk::Core::Logger::logToGlobalInstance()
+  @sa Gxtk::Core::Logger::defaultCategory()
+  @sa Gxtk::Core::Logger::registerCategoryAppender()
+  @sa Gxtk::Core::Logger::write()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dAssert
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dAssert
+  \macro Gxtk::Core::dAssert
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dAssert
 
   @brief Check the assertion
 
@@ -335,14 +335,14 @@ DLOG_CORE_BEGIN_NAMESPACE
   dAssert(b == true);
   \endcode
 
-  @sa Dtk::Core::Logger::writeAssert()
+  @sa Gxtk::Core::Logger::writeAssert()
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dTraceTime
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dTraceTime
+  \macro Gxtk::Core::dTraceTime
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dTraceTime
 
   @brief Logs the processing time of current function / code block
 
@@ -379,39 +379,39 @@ DLOG_CORE_BEGIN_NAMESPACE
   \endcode
 
   @note Macro switches to logging the seconds instead of milliseconds when the execution time reaches 10000 ms.
-  @sa Dtk::Core::dDebugTime, Dtk::Core::dInfoTime
+  @sa Gxtk::Core::dDebugTime, Gxtk::Core::dInfoTime
  */
 
 /*!
-  \macro Dtk::Core::dDebugTime
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dDebugTime
+  \macro Gxtk::Core::dDebugTime
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dDebugTime
 
   @brief Logs the processing time of current function / code block
 
   This macro automagically measures the function or code of block execution time and outputs it as a Logger::Debug
   level log record. It works similar to dTraceTime() macro.
 
-  @sa Dtk::Core::dTraceTime
+  @sa Gxtk::Core::dTraceTime
  */
 
 /*!
 @~english
-  \macro Dtk::Core::dInfoTime
-  \relates Dtk::Core::Logger
-  \keyword Dtk::Core::dInfoTime
+  \macro Gxtk::Core::dInfoTime
+  \relates Gxtk::Core::Logger
+  \keyword Gxtk::Core::dInfoTime
 
   @brief Logs the processing time of current function / code block
 
   This macro automagically measures the function or code of block execution time and outputs it as a Logger::Info
   level log record. It works similar to dTraceTime() macro.
 
-  @sa Dtk::Core::dTraceTime
+  @sa Gxtk::Core::dTraceTime
  */
 
 /*!
 @~english
- \enum Dtk::Core::Logger::LogLevel
+ \enum Gxtk::Core::Logger::LogLevel
  \value Trace
  Can be used for mostly unneeded records used for internal code tracing.
  \value Debug
@@ -428,7 +428,7 @@ DLOG_CORE_BEGIN_NAMESPACE
 
 /*!
 @~english
-  \class Dtk::Core::Logger
+  \class Gxtk::Core::Logger
   \inmodule gxtkcore
 
   @brief Very simple but rather powerful component which may be used for logging your application activities.
@@ -439,7 +439,7 @@ DLOG_CORE_BEGIN_NAMESPACE
   @note Qt 4 qDebug set of macro doesn't support capturing source function name, file name or line number so we
         recommend to use dDebug() and other Logger macros instead.
 
-  @sa Dtk::Core::dlogger
+  @sa Gxtk::Core::dlogger
  */
 
 class LogDevice : public QIODevice
@@ -652,7 +652,7 @@ Logger::~Logger()
 
   In a most cases you shouldn't use this function directly. Consider using [dlogger](@ref dlogger) macro instead.
 
-  @sa Dtk::Core::dlogger
+  @sa Gxtk::Core::dlogger
  */
 Logger *Logger::globalInstance()
 {
@@ -796,8 +796,8 @@ void Logger::registerAppender(AbstractAppender *appender)
         appenders must be created on heap to prevent double destruction of the appender.
 
   @sa registerAppender
-  @sa Dtk::Core::dCTrace(), Dtk::Core::dCDebug(), Dtk::Core::dCInfo(), Dtk::Core::dCWarning(), Dtk::Core::dCError(), Dtk::Core::dCFatal()
-  @sa Dtk::Core::dCategory(), Dtk::Core::dGlobalCategory()
+  @sa Gxtk::Core::dCTrace(), Gxtk::Core::dCDebug(), Gxtk::Core::dCInfo(), Gxtk::Core::dCWarning(), Gxtk::Core::dCError(), Gxtk::Core::dCFatal()
+  @sa Gxtk::Core::dCategory(), Gxtk::Core::dGlobalCategory()
   @sa logToGlobalInstance()
   @sa setDefaultCategory()
  */
@@ -897,7 +897,7 @@ QString Logger::defaultCategory() const
         function, which will interrupt the running of your software and begin the writing of the core dump.
 
   @sa LogLevel
-  @sa Dtk::Core::dTrace(), Dtk::Core::dDebug(), Dtk::Core::dInfo(), Dtk::Core::dWarning(), Dtk::Core::dError(), Dtk::Core::dFatal()
+  @sa Gxtk::Core::dTrace(), Gxtk::Core::dDebug(), Gxtk::Core::dInfo(), Gxtk::Core::dWarning(), Gxtk::Core::dError(), Gxtk::Core::dFatal()
   @sa AbstractAppender
  */
 void Logger::write(const QDateTime &time, Logger::LogLevel level, const char *file, int line,
@@ -1074,7 +1074,7 @@ void CuteMessageLogger::write(const QString & /*msg*/) const
 
 QDebug CuteMessageLogger::write() const
 {
-    return QDebug(QtWarningMsg) << "DEPRECATED! rebuild your application with lastest DtkCore";
+    return QDebug(QtWarningMsg) << "DEPRECATED! rebuild your application with lastest GxtkCore";
 }
 
 DLOG_CORE_END_NAMESPACE

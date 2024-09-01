@@ -23,7 +23,7 @@
 DLOG_CORE_BEGIN_NAMESPACE
 
 /*!
-  \class Dtk::Core::OutputDebugAppender
+  \class Gxtk::Core::OutputDebugAppender
   \inmodule gxtkcore
 
   \brief Appender that writes the log records to the Microsoft Debug Log.

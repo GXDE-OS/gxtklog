@@ -22,7 +22,7 @@ DLOG_CORE_BEGIN_NAMESPACE
 extern std::string loggerName(const QFile &logFile);
 /*!
 @~english
-  @class Dtk::Core::RollingFileAppender
+  @class Gxtk::Core::RollingFileAppender
   @ingroup dlog
   @brief The RollingFileAppender class extends FileAppender so that the underlying file is rolled over at a user chosen frequency.
 

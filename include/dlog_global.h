@@ -7,7 +7,7 @@
 
 #include <QtCore/qglobal.h>
 
-#define DLOG_NAMESPACE Dtk
+#define DLOG_NAMESPACE Gxtk
 
 #if !defined(DLOG_NAMESPACE)
 #define DLOG_BEGIN_NAMESPACE

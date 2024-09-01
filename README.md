@@ -35,11 +35,11 @@ Add this repo as a git submodule to your project.
 
 Include it to your CMakeLists.txt file:
 ```cmake
-find_package(DtkLog REQUIRED)
+find_package(GxtkLog REQUIRED)
 ...
 
 ...
-TARGET_LINK_LIBRARIES(${your_target} ... Dtk::Log)
+TARGET_LINK_LIBRARIES(${your_target} ... Gxtk::Log)
 ```
 
 Include `dloghelper.h` and one or several appenders of your choice:

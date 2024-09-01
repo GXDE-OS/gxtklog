@@ -33,7 +33,7 @@ DLOG_CORE_BEGIN_NAMESPACE
 
 /*!
 @~english
-  @class Dtk::Core::ConsoleAppender
+  @class Gxtk::Core::ConsoleAppender
   @ingroup dlog
 
   @brief ConsoleAppender is the simple appender that writes the log records to the std::cerr output stream.

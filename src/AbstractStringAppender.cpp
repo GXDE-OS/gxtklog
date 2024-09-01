@@ -44,7 +44,7 @@ inline static QString formattedLevelWithColor(Logger::LogLevel level, QString &m
 
 /*!
 @~english
-  \class Dtk::Core::AbstractStringAppender
+  \class Gxtk::Core::AbstractStringAppender
   \inmodule gxtkcore
 
   \brief The AbstractStringAppender class provides a convenient base for appenders working with plain text formatted

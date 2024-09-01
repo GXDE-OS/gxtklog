@@ -28,7 +28,7 @@ std::string loggerName(const QFile &logFile)
 }
 /*!
 @~english
-  @class Dtk::Core::FileAppender
+  @class Gxtk::Core::FileAppender
   @ingroup gxtkcore
 
   @brief Simple appender that writes the log records to the plain text file.
