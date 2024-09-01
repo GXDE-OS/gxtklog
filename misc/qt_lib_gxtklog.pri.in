@@ -1,0 +1,12 @@
+QT.gxtklog.VERSION = @CMAKE_PROJECT_VERSION@
+QT.gxtklog.MAJOR_VERSION = @PROJECT_VERSION_MAJOR@
+QT.gxtklog.MINOR_VERSION = @PROJECT_VERSION_MINOR@
+QT.gxtklog.PATCH_VERSION = @PROJECT_VERSION_PATCH@
+QT.gxtklog.name = gxtklog
+QT.gxtklog.module = gxtk@DTK_VERSION_MAJOR@log
+QT.gxtklog.libs = @CMAKE_INSTALL_PREFIX@/@LIBRARY_INSTALL_DIR@
+QT.gxtklog.includes = @CMAKE_INSTALL_PREFIX@/@INCLUDE_INSTALL_DIR@
+QT.gxtklog.frameworks =
+QT.gxtklog.depends = core
+QT.gxtklog.module_config = v2 ltcg
+QT_MODULES +=
